@@ -43,21 +43,39 @@
 	width: 266px;
 	z-index: 2;
 }
-#makersInfo {
+#info {
 	background: #fff;
 	width: 100%;
 }
-#makersInfo-wrapper {
+#info-wrapper {
 	width: 100%;
-	max-width: 570px;
+	max-width: 530px;
 	margin: 0 auto;
 	padding-top: 50px;
 }
-#makersInfo h1 {
+#info h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 26pt;
+	font-size: 30pt;
+	margin-bottom: 30px;
+	padding-left: 30px;
 	color: #242424;
+}
+#info blockquote {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-style: italic;
+	line-height: 1.7;
+	padding-left: 30px;
+	border-left: 3px solid #F9665C;
+}
+#info blockquote::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -30px;
+	height: 100%;
+	background: red;
+	width: 10px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) { 
 	/* -[Retina Styles]- */

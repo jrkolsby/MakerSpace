@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	height: 70px;
+	overflow: auto;
 	background: #27A4F7;
 }
 #header-wrapper {
@@ -13,15 +13,25 @@ header {
 #logo {
 	width: 170px;
 	height: 34px;
+	margin: 15px 0;
+	margin-left: 20px;
 	background: url('../assets/logo.png');
+	float: left;
+}
+#menuicon {
+	width: 30px;
+	height: 29px;
 	position: absolute;
-	top: 18px;
-	left: 35px;
+	left: 15px;
+	top: 3px;
+	background: url('../assets/menuicon.png');
+	display: none;
+	cursor: pointer;
 }
 nav {
-	position: absolute;
-	top: 18px;
-	right: 35px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 20px;
 }
 nav span {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -43,36 +53,50 @@ nav span:hover {
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) {
 	/* -[Retina Styles]- */
-    #logo {background-image: url('../assets/logo@2x.png');background-size: 170px 34px;}
+    #logo {background: url('../assets/logo@2x.png') 170px 34px;}
+    #menuicon {background: url('../assets/menuicon@2x.png') 30px 29px;}
 }
 @media only screen and (max-width: 760px) {
 	header {
-		height: 140px;
+		text-align: center;
 	}
 	#logo {
 		position: relative;
-		margin: 0 auto;
-		left: 0;
-		top: 20px;
+		margin: 15px auto;
+		float: none;
 	}
 	nav {
-		position: relative;
-		text-align: center;
-		right: 0;
-		top: 50px;
+		float: none;
+		display: inline-block;
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 }
 @media only screen and (max-width: 550px) {
 	header {
-		height: 250px;
+		max-height: 64px;
+		overflow: hidden;
+		-webkit-transition: .3s max-height ease-in-out;
+		transition: .3s max-height ease-in-out;
+	}
+	header.full {
+		max-height: 260px;
+	}
+	#menuicon {
+		display: block;
 	}
 	nav {
 		top: 40px;
 		line-height: 1.5;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
 	}
 	nav span {
 		display: block;
-		margin-right: 0;
-		border-radius: 0;
+		margin: 0;
+		padding: 5px 0;
+		border-radius: 0; 
+		width: 100%;
 	}
 }

@@ -2,9 +2,9 @@
 	width: 100%;
 	position: absolute;
 	z-index: 8;
-	transform: perspective(800px) rotateX(-90deg);
-	-moz-transform: perspective(800px) rotateX(-90deg);
-	-webkit-transform: perspective(800px) rotateX(-90deg);
+	transform: perspective(1000px) rotateX(-90deg);
+	-moz-transform: perspective(1000px) rotateX(-90deg);
+	-webkit-transform: perspective(1000px) rotateX(-90deg);
 	transform-origin: top;
 	-moz-transform-origin: top;
 	-webkit-transform-origin: top;
