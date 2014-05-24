@@ -72,7 +72,7 @@ span a:last-child {
 .largeMenuWrapper a:hover {
 	opacity: 1;
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
 	.largeMenuWrapper {
 		text-align: left;
 	}
@@ -80,7 +80,7 @@ span a:last-child {
 		max-height: 400px;
 	}
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 550px) {
 	.largeMenuWrapper span {
 		display: block;
 	}
