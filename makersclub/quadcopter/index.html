@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta
+	content="The Lovett School MakerSpace"
+	name="description">
+	<meta content=
+	"width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"
+	name="viewport">
+	<title>Lovett MakerSpace - Makers Club</title>	
+	<link href="../../css/html5.css" rel="stylesheet" type="text/css">
+	<link href="../../css/main.css" rel="stylesheet" type="text/css">
+	<link href="../../css/largemenu.css" rel="stylesheet" type="text/css">
+	<link href="../makersclub.css" rel="stylesheet" type="text/css">
+	<link 
+	href='http://fonts.googleapis.com/css?family=Montserrat'
+	rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type='text/javascript' src='../../js/largemenu.js'></script>
+	<script type='text/javascript'>
+	$(document).ready(function() {
+		$('header').initMenu({
+				'makerSpace': [
+					{
+						'groupTitle': 'Info',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'People',
+						'linkArray': [
+							{
+								'title': 'Laura Deisley',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'James Wingate',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Karl Hwang',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'John Appleseed',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'makersClub': [
+					{
+						'groupTitle': 'Pages',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Sign Up',
+								'link': 'http://jmkl.co'
+							},
+						]
+					},
+					{
+						'groupTitle': 'Projects',
+						'linkArray': [
+							{
+								'title': 'Quadcopter',
+								'link': 'http://http://jmkl.co'
+							},
+							{
+								'title': 'High-Powered Rocket',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'High-Altitude Balloon',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Go-Kart',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Hydroelectric Turbine',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Drone Plane',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'roboticsClub': [
+					{
+						'groupTitle': 'Pages',
+						'linkArray': [
+							{
+								'title': 'Test',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Test',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				]
+			});
+		$('#menuicon').click(function(){
+			$('header').toggleClass('full');
+		});
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div id="header-wrapper">
+			<div id="menuicon"></div>
+			<div id="logo"></div>
+			<nav>
+				<span ref="makerSpace">The Space</span>
+				<span ref="makersClub">Makers Club</span>
+				<span ref="roboticsClub">Robotics Club</span>
+				<span ref="robotics">Robitics I & II</span>
+			</nav>
+		</div>
+	</header>
+	<!-- Start Makers Club shtuff -->
+	<section id="project-main">
+		<h1>High-Altitude Balloon</h1>
+		<br/>
+		<h3>Lorem Ipsum dolor sit amet this should be a brief but descriptive definition of the project</h3>
+	</section>
+	<script type='text/javascript' src='../../js/retina.js'></script>
+</body>
+</html>

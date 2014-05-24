@@ -11,19 +11,19 @@ header {
 	margin: 0 auto;
 }
 #logo {
-	width: 170px;
-	height: 34px;
+	width: 163px;
+	height: 36px;
 	margin: 15px 0;
 	margin-left: 20px;
 	background: url('../assets/logo.png');
 	float: left;
 }
 #menuicon {
-	width: 30px;
-	height: 29px;
+	width: 24px;
+	height: 23px;
 	position: absolute;
-	left: 15px;
-	top: 3px;
+	left: 20px;
+	top: 8px;
 	background: url('../assets/menuicon.png');
 	display: none;
 	cursor: pointer;
@@ -50,11 +50,6 @@ nav span:last-child {
 }
 nav span:hover {
 	background: #1F93E1;
-}
-@media all and (-webkit-min-device-pixel-ratio: 2) {
-	/* -[Retina Styles]- */
-    #logo {background: url('../assets/logo@2x.png') 170px 34px;}
-    #menuicon {background: url('../assets/menuicon@2x.png') 30px 29px;}
 }
 @media only screen and (max-width: 760px) {
 	header {
@@ -99,4 +94,9 @@ nav span:hover {
 		border-radius: 0; 
 		width: 100%;
 	}
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+	/* -[Retina Styles]- */
+    #logo {background: url('../assets/logo@2x.png') / 170px 34px;}
+    #menuicon {background: url('../assets/menuicon@2x.png') / 30px 29px;}
 }

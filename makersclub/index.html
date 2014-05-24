@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta
+	content="The Lovett School MakerSpace"
+	name="description">
+	<meta content=
+	"width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"
+	name="viewport">
+	<title>Lovett MakerSpace - Makers Club</title>	
+	<link href="../css/html5.css" rel="stylesheet" type="text/css">
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<link href="../css/largemenu.css" rel="stylesheet" type="text/css">
+	<link href="makersclub.css" rel="stylesheet" type="text/css">
+	<link 
+	href='http://fonts.googleapis.com/css?family=Montserrat'
+	rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type='text/javascript' src='../js/largemenu.js'></script>
+	<script type='text/javascript'>
+	$(document).ready(function() {
+		$('header').initMenu({
+				'makerSpace': [
+					{
+						'groupTitle': 'Info',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'People',
+						'linkArray': [
+							{
+								'title': 'Laura Deisley',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'James Wingate',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Karl Hwang',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'John Appleseed',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'makersClub': [
+					{
+						'groupTitle': 'Pages',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Sign Up',
+								'link': 'http://jmkl.co'
+							},
+						]
+					},
+					{
+						'groupTitle': 'Projects',
+						'linkArray': [
+							{
+								'title': 'Quadcopter',
+								'link': 'http://http://jmkl.co'
+							},
+							{
+								'title': 'High-Powered Rocket',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'High-Altitude Balloon',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Go-Kart',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Hydroelectric Turbine',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Drone Plane',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'roboticsClub': [
+					{
+						'groupTitle': 'Pages',
+						'linkArray': [
+							{
+								'title': 'Test',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Test',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				]
+			});
+		$('#menuicon').click(function(){
+			$('header').toggleClass('full');
+		});
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div id="header-wrapper">
+			<div id="menuicon"></div>
+			<div id="logo"></div>
+			<nav>
+				<span ref="makerSpace">The Space</span>
+				<span ref="makersClub">Makers Club</span>
+				<span ref="roboticsClub">Robotics Club</span>
+				<span ref="robotics">Robitics I & II</span>
+			</nav>
+		</div>
+	</header>
+	<!-- Start Makers Club shtuff -->
+	<section id="main">
+		<div id="makersLogo"></div>
+		<br/>
+		<button>Sign Up</button>
+	</section>
+	<section id="info">
+		<div id="info-wrapper">
+			<h1>The Makers Club</h1>
+			<blockquote>The Moon is no longer unattainable. A dozen humans, all Americans, made those odd skipping motions they called “moonwalks” on the crunchy, cratered, ancient gray lava—beginning on that July day in 1969. But since 1972, no one from any nation has ventured there. Indeed, none of us has gone anywhere since the glory days of Apollo except into low Earth orbit—like a toddler who takes a few tentative steps outward and then, breathless, retreats to the safety of his mother’s skirts.<br/><br/>Once upon a time, we soared into the solar system. For a few years. Then we hurried back. Why? What happened? What was Apollo really about?</blockquote>
+			<img src="../images/image.jpg" />
+			<h3>Lorem this is a description of the image ipsum dolor</h3>
+			<p>Pellentesque cursus, nulla quis auctor ultricies, turpis est vehicula ligula, sit amet euismod neque lacus nec augue. Phasellus eu arcu placerat, dapibus ipsum et, tincidunt erat. Aenean vel neque mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam varius quam ac ipsum vestibulum tincidunt. Praesent hendrerit gravida suscipit. Cras aliquet molestie fermentum. Suspendisse ac condimentum tortor, quis consectetur tortor. Cras fringilla sem scelerisque pulvinar malesuada. In dapibus, ipsum nec convallis viverra, sem est rhoncus nibh, sed convallis nibh urna lobortis lacus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit lorem ut arcu interdum imperdiet. Proin ornare accumsan tortor. Nullam at posuere eros. Aenean posuere sollicitudin metus non gravida. In sem metus, laoreet sed ipsum sed, commodo eleifend libero. Aliquam consequat egestas dictum. Maecenas pulvinar metus id mollis egestas. Morbi placerat ultricies vulputate. Nam id nunc quis nulla tincidunt elementum.</p>
+		</div>
+	</section>
+	<footer>
+		All design and content by the Lovett Makers Club unless otherwise noted
+	</footer>
+	<script type='text/javascript' src='../js/retina.js'></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+#main {
+	background: url('../assets/makersbg.png') 50% 50% / cover;
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+}
+#project-main {
+	text-align: center;
+	width: 100%;
+	background: #FFD200;
+	overflow: auto;
+	vertical-align: middle;
+}
+#main button {
+	background: #FFD200;
+	border: none;
+	border-radius: 8px;
+	color: #111;
+  	cursor: pointer;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	height: 55px;
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+	width: 215px;
+	z-index: 2;
+	-webkit-transition: .1s background ease-in-out;
+	transition: .1s background ease-in-out;
+}
+#main button:hover {
+	background: #ffe155;
+}
+#makersLogo {
+	background: url('../assets/makerslogo.png');
+	display: inline-block;
+	height: 236px;
+	margin-bottom: 60px;
+	margin-top: 70px;
+	position: relative;
+	width: 266px;
+	z-index: 2;
+}
+#info {
+	background: #fff;
+	width: 100%;
+	position: relative;
+	bottom: 1px;
+}
+#info-wrapper,
+footer {
+	width: 100%;
+	padding: 0 15px;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+#info-wrapper {
+	padding-top: 50px;
+	text-align: center;
+	max-width: 530px;
+}
+#info h1,
+#info blockquote,
+#info p,
+#info h3 {
+	text-align: left;
+}
+#info h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 30pt;
+	margin-bottom: 30px;
+	color: #242424;
+}
+#project-main h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 36pt;
+	display: inline-block;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	color: #000;	
+}
+#project-main h3 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: 300;
+	line-height: 1.5;
+	max-width: 450px;
+	margin-bottom: 70px;
+	display: inline-block;
+	text-align: left;
+	color: #fff;
+}
+#info blockquote,
+#info p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 1.6;
+	margin-bottom: 30px;
+	color: #333;
+}
+#info blockquote {
+	font-style: italic;
+	padding-left: 30px;
+	border-left: 3px solid #F9665C;	
+}
+#info img {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+#info h3 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 300;
+	display: inline-block;
+	color: #bbb;
+	margin-bottom: 30px;
+}
+footer {
+	max-width: 600px;
+	padding-top: 20px;
+	border-top: 2px solid #ddd;
+	margin-bottom: 30px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 300;
+	color: #bbb;
+}
+@media only screen and (max-width: 760px) {
+	#makersMain button {
+		margin-bottom: 50px;
+		width: 180px;
+		height: 50px;
+		font-size: 12pt;
+	}
+	#makersLogo {
+		background: url('../assets/makerslogo-small.png');
+		width: 222px;
+		height: 197px;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	#info h1 {
+		font-size: 24pt;
+	}
+}
+@media only screen and (max-width: 550px) {
+	#info img {
+		width: 100%;
+		padding-left: 0;
+	}
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) { 
+	/* -[Retina Styles]- */
+	#makersLogo { background: url('../assets/makerslogo@2x.png') / 266px 236px }
+}
+@media only screen and (max-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
+	#makersLogo {
+		background: url('../assets/makerslogo-small@2x.png') / 222px 197px;
+	}	
+}
