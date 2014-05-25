@@ -42,13 +42,15 @@
 	width: 266px;
 	z-index: 2;
 }
-#info {
+#info,
+#projectInfo {
 	background: #fff;
 	width: 100%;
 	position: relative;
 	bottom: 1px;
 }
 #info-wrapper,
+#projectInfo-wrapper,
 footer {
 	width: 100%;
 	padding: 0 15px;
@@ -57,22 +59,28 @@ footer {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
-#info-wrapper {
-	padding-top: 50px;
+#info-wrapper,
+#projectInfo-wrapper {
 	text-align: center;
 	max-width: 530px;
 }
 #info h1,
 #info blockquote,
 #info p,
-#info h3 {
+#info h3,
+#projectInfo h1,
+#projectInfo blockquote,
+#projectInfo p,
+#projectInfo h3 {
 	text-align: left;
 }
-#info h1 {
+#info h1,
+#projectInfo h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	font-size: 30pt;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	margin-top: 60px;
 	color: #242424;
 }
 #project-main h1 {
@@ -82,7 +90,12 @@ footer {
 	display: inline-block;
 	margin-top: 70px;
 	margin-bottom: 30px;
-	color: #000;	
+	color: #000;
+	line-height: 1.4;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 15px;
 }
 #project-main h3 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -92,8 +105,11 @@ footer {
 	max-width: 450px;
 	margin-bottom: 70px;
 	display: inline-block;
-	text-align: left;
 	color: #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 15px;
 }
 #info blockquote,
 #info p {
@@ -111,6 +127,7 @@ footer {
 #info img {
 	display: inline-block;
 	margin-bottom: 10px;
+	border: 1px solid #979797;
 }
 #info h3 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -130,6 +147,92 @@ footer {
 	font-weight: 300;
 	color: #bbb;
 }
+.progressBar {
+	height: 50px;
+	border: 2px solid #979797;
+	width: 100%;
+	color: #909090;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12pt;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	padding-top: 16px;
+	margin-bottom: 20px;
+}
+.progressBar div {
+	height: 100%;
+	float: left;
+	background: #00C9CC;
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin-top: -18px;
+	margin-left: -2px;
+	padding-top: 16px;
+	border: 2px solid #00C9CC;
+}
+.update {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.update date {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 15pt;
+	color: #a5a5a5;	
+}
+.update p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 1.3;
+	margin-top: 10px;
+	color: #333;
+}
+.update img {
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 1px solid #979797;
+}
+.file {
+	margin-bottom: 30px;
+	position: relative;
+	text-align: left;
+	height: 50px;
+}
+.file h3,
+.file h4 {
+	margin-left: 50px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
+	line-height: 1.3;
+	display: block;
+	-webkit-transition: .1s margin-left ease-in-out;
+	transition: .1s margin-left ease-in-out;
+	cursor: pointer;
+}
+.file:hover h3,
+.file:hover h4 {
+	margin-left: 60px;
+}
+.file h3 {
+	font-size: 15pt;
+	color: #333;
+	margin-bottom: 4px;
+}
+.file h4 {
+	font-size: 10pt;
+	color: #979797;
+}
+.file::before {
+	content: '';
+	width: 37px;
+	height: 49px;
+	position: absolute;
+	background: url('../assets/file.png');
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 760px) {
 	#makersMain button {
 		margin-bottom: 50px;
@@ -138,7 +241,7 @@ footer {
 		font-size: 12pt;
 	}
 	#makersLogo {
-		background: url('../assets/makerslogo-small.png');
+		background: url('../assets/makerslogo-small.png') 50% 50% no-repeat;
 		width: 222px;
 		height: 197px;
 		margin-top: 50px;
@@ -147,6 +250,33 @@ footer {
 	#info h1 {
 		font-size: 24pt;
 	}
+	#projectInfo h1 {
+		font-size: 22pt;
+	}
+	#project-main h1 {
+		font-size: 24pt;
+		margin-top: 50px;
+	}
+	#project-main h3 {
+		font-size: 12pt;
+		margin-bottom: 50px;
+	}
+	.progressBar {
+		height: 40px;
+		padding-top: 11px;
+		font-size: 11pt;
+	}
+	.progressBar div {
+		padding-top: 11px;
+		margin-top: -13px;
+	}
+	.update date {
+		font-size: 13pt;
+	}
+	.update p {
+		font-size: 11pt;
+	}
+
 }
 @media only screen and (max-width: 550px) {
 	#info img {
@@ -159,7 +289,5 @@ footer {
 	#makersLogo { background-image: url('../assets/makerslogo@2x.png'); background-size: 266px 236px }
 }
 @media only screen and (max-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
-	#makersLogo {
-		background-image: url('../assets/makerslogo-small@2x.png'); background-size: 222px 197px;
-	}	
+	#makersLogo { background-image: url('../assets/makerslogo-small@2x.png'); background-size: 222px 197px; }	
 }
