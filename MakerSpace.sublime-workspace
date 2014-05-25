@@ -1,0 +1,358 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"large",
+				"largeMenuGroup"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"lar",
+				"largeMenu-group"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"menu",
+				"menuObject"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"border",
+				"border-top-right-radius"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"get",
+				"getUrlVars"
+			],
+			[
+				"char",
+				"charCount"
+			],
+			[
+				"selection",
+				"selectionStart"
+			],
+			[
+				"caret",
+				"caretPos"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"history",
+				"history"
+			],
+			[
+				"histo",
+				"history"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"rgb",
+				"rgba()"
+			]
+		]
+	},
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ssc",
+				"Set Syntax: C"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jrkolsby/Documents/GitHub/portfolio/html5.css",
+		"/Users/jrkolsby/Documents/GitHub/portfolio/main.css",
+		"/Users/jrkolsby/Documents/GitHub/innovationatlanta/global.css",
+		"/Users/jrkolsby/Documents/GitHub/MakerSpace/js/retina.js",
+		"/Users/jrkolsby/Documents/GitHub/makersclub/global.css",
+		"/Users/jrkolsby/Documents/GitHub/portfolio/index.html",
+		"/Users/jrkolsby/Documents/GitHub/MakerSpace/retina.js",
+		"/Users/jrkolsby/Documents/GitHub/MakerSpace/html5.css",
+		"/Users/jrkolsby/Documents/GitHub/MathKit/index.html",
+		"/Users/jrkolsby/Documents/GitHub/MathKit/README.md",
+		"/Users/jrkolsby/Documents/GitHub/MathKit/mathkit.css",
+		"/Users/jrkolsby/Documents/GitHub/MathKit/mathkit.js",
+		"/Users/jrkolsby/Desktop/multiplicity.png",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/js/parser.js",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/js/multiplicity.js",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/index.html",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/css/main.css",
+		"/Users/jrkolsby/Documents/GitHub/innovationatlanta/index.html",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/main.css",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/multiplicity.js",
+		"/Users/jrkolsby/Documents/GitHub/multiplicity/html5.css",
+		"/Users/jrkolsby/Documents/GitHub/js-expression-eval/parser.js",
+		"/Users/jrkolsby/Documents/GitHub/js-expression-eval/test.js",
+		"/Users/jrkolsby/Desktop/Makefile",
+		"/Users/jrkolsby/Desktop/quicksort.c",
+		"/Users/jrkolsby/Dropbox/James Kolsby/OTH/c-exercises/test.c",
+		"/Users/jrkolsby/Desktop/sort.c",
+		"/Users/jrkolsby/Dropbox/James Kolsby/PRJ/FIN/ios-Periodic-2/Periodic/Periodic/MathView.m",
+		"/Users/jrkolsby/Dropbox/James Kolsby/PRJ/FIN/ios-Periodic-2/Periodic/Periodic/HistoryLabel.m",
+		"/Users/jrkolsby/Dropbox/James Kolsby/SCO/11th/SAT Vocab.txt",
+		"/Users/jrkolsby/Desktop/test.html",
+		"/Users/jrkolsby/Documents/GitHub/js-expression-eval/index.html",
+		"/Users/jrkolsby/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jrkolsby/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jrkolsby/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/jrkolsby/Documents/GitHub/whether/index.html",
+		"/Users/jrkolsby/Desktop/Untitled.selfcontrol",
+		"/Users/jrkolsby/Desktop/jameskolsby/makersclub/index.php",
+		"/Users/jrkolsby/Desktop/jameskolsby/makersclub/send.php",
+		"/Users/jrkolsby/Desktop/credentials2.php",
+		"/Users/jrkolsby/Desktop/credentials3.php",
+		"/Users/jrkolsby/Documents/GitHub/carcomments/submit.php",
+		"/Users/jrkolsby/Documents/GitHub/carcomments/index.php",
+		"/Users/jrkolsby/Documents/GitHub/carcomments/credentials.php",
+		"/Users/jrkolsby/Desktop/carcomments.csv",
+		"/Users/jrkolsby/Documents/GitHub/beta/credentials.php",
+		"/Users/jrkolsby/Desktop/jameskolsby/index.html",
+		"/Users/jrkolsby/Documents/GitHub/beta/index.php",
+		"/Users/jrkolsby/Desktop/credentials.php",
+		"/Users/jrkolsby/Desktop/jameskolsby/Whether/index.html",
+		"/Users/jrkolsby/Documents/Git/Whether/index.html",
+		"/Users/jrkolsby/Desktop/gist1287372-46f810306802099024833ea71b1af2d806561a16/update_git_repos.sh",
+		"/Users/jrkolsby/Desktop/di.html",
+		"/Users/jrkolsby/Desktop/LEVEL10",
+		"/Users/jrkolsby/Desktop/test.css",
+		"/Users/jrkolsby/Desktop/index.html",
+		"/Users/jrkolsby/Documents/GitHub/RedditLogger/index.php",
+		"/Users/jrkolsby/Documents/GitHub/RedditLogger/global.css",
+		"/Users/jrkolsby/Desktop/6uwq3l6ykg2jf1t5c2tM Domains by proxy",
+		"/Users/jrkolsby/Desktop/James Kolsby 4 year plan 2-5-14.xls",
+		"/Users/jrkolsby/Documents/GitHub/RedditLogger/login/login.php",
+		"/Users/jrkolsby/Desktop/redditlogger/README",
+		"/Users/jrkolsby/Documents/GitHub/RedditLogger/xkmomoyeoz/logger.php",
+		"/Users/jrkolsby/Desktop/James Kolsby.html",
+		"/Users/jrkolsby/Dropbox/James Kolsby/SCO/11th/history/RESEARCH PAPER/Thesis",
+		"/Users/jrkolsby/Dropbox/James Kolsby/PRJ/FIN/c-fibonacci/fib.c",
+		"/Users/jrkolsby/Dropbox/James Kolsby/PRJ/DEV/web-portfolio/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"%;\n",
+			"*",
+			"\"",
+			"mo",
+			"montserrat",
+			"alert",
+			"sicon",
+			".icon",
+			"section",
+			"#main",
+			"border-bo",
+			"*",
+			"#main",
+			"max-wid",
+			"#head",
+			"halfwrap",
+			"src=\"../",
+			"src=\"",
+			"\\s{2,}",
+			"/\\s{2,}/g",
+			"\\n",
+			"error",
+			"log(",
+			"parity",
+			"match",
+			"error",
+			"txtarea",
+			"console.",
+			"console.log",
+			"div",
+			"    ",
+			"\"",
+			"evaluate()",
+			"evaluate",
+			"txtarea",
+			"    ",
+			" - ",
+			"up",
+			"tout",
+			"pathos",
+			"disten",
+			"punctili",
+			" +",
+			"+",
+			"*",
+			"*****",
+			"\\n",
+			"Projects \nin \nSublime \nText \ncapture \nthe \nfull \ncontents \nof \nthe \nworkspace, \nincluding \nmodified \nand \nunsaved \nfiles. \nYou \ncan \nswitch \nbetween \nprojects \nin \na \nmanner \nsimilar \nto \nGoto \nAnything, \nand \nthe \nswitch \nis \ninstant, \nwith \nno \nsave \nprompts \n- \nall \nyour \nmodifications \nwill \nbe \nrestored \nnext \ntime \nthe \nproject \nis \nopened. \n",
+			" +",
+			"self",
+			"-",
+			"arcane",
+			"truc",
+			"fid",
+			"sad; tearful",
+			"lugu",
+			"lugubr",
+			"ineffable",
+			"tenuous",
+			"laconic",
+			"churlish",
+			"disrepute",
+			"venerable",
+			"halcyon",
+			"venerable",
+			"$credentials['db_user']",
+			":",
+			"tab",
+			"domain",
+			"\n	"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/jrkolsby/Documents/GitHub/js-expression-eval/index.html"
+			],
+			[
+				"index.html",
+				"/Users/jrkolsby/Documents/Git/Whether/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true
+}

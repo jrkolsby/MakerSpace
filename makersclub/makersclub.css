@@ -196,9 +196,10 @@ footer {
 }
 .file {
 	margin-bottom: 30px;
-	position: relative;
 	text-align: left;
 	height: 50px;
+	display: table;
+	cursor: pointer;
 }
 .file h3,
 .file h4 {
@@ -209,7 +210,6 @@ footer {
 	display: block;
 	-webkit-transition: .1s margin-left ease-in-out;
 	transition: .1s margin-left ease-in-out;
-	cursor: pointer;
 }
 .file:hover h3,
 .file:hover h4 {
@@ -230,7 +230,6 @@ footer {
 	height: 49px;
 	position: absolute;
 	background: url('../assets/file.png');
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 760px) {
@@ -279,7 +278,8 @@ footer {
 
 }
 @media only screen and (max-width: 550px) {
-	#info img {
+	#info img,
+	.update img {
 		width: 100%;
 		padding-left: 0;
 	}
