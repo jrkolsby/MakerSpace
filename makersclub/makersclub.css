@@ -156,10 +156,10 @@ footer {
 }
 @media all and (-webkit-min-device-pixel-ratio: 2) { 
 	/* -[Retina Styles]- */
-	#makersLogo { background: url('../assets/makerslogo@2x.png') / 266px 236px }
+	#makersLogo { background-image: url('../assets/makerslogo@2x.png'); background-size: 266px 236px }
 }
 @media only screen and (max-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
 	#makersLogo {
-		background: url('../assets/makerslogo-small@2x.png') / 222px 197px;
+		background-image: url('../assets/makerslogo-small@2x.png'); background-size: 222px 197px;
 	}	
 }
