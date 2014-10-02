@@ -11,7 +11,7 @@ header {
 	margin: 0 auto;
 }
 #logo {
-	width: 163px;
+	width: 115px;
 	height: 36px;
 	margin: 15px 0;
 	margin-left: 20px;
@@ -95,8 +95,12 @@ nav span:hover {
 		width: 100%;
 	}
 }
-@media all and (-webkit-min-device-pixel-ratio: 2) {
-	/* -[Retina Styles]- */
-    #logo {background-image: url('../assets/logo@2x.png'); background-size: 163px 36px;}
-    #menuicon {background-image: url('../assets/menuicon@2x.png'); background-size: 24px 23px;}
+@media only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (-moz-min-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2) {
+		/* -[Retina Styles]- */
+	    #logo {background-image: url('../assets/logo@2x.png'); background-size: 115px 36px;}
+	    #menuicon {background-image: url('../assets/menuicon@2x.png'); background-size: 24px 23px;}
 }

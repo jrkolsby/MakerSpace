@@ -285,11 +285,19 @@ footer {
 		padding-left: 0;
 	}
 }
-@media all and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (-moz-min-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2) {
 	/* -[Retina Styles]- */
 	#makersLogo { background-image: url('../assets/makerslogo@2x.png'); background-size: 266px 236px }
 	.file::before { background-image: url('../assets/file@2x.png'); background-size: 37px 49px;}
 }
-@media only screen and (max-width: 760px) and (-webkit-min-device-pixel-ratio: 2) {
-	#makersLogo { background-image: url('../assets/makerslogo-small@2x.png'); background-size: 222px 197px; }	
+@media only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 760px),
+	only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 760px),
+	only screen and (-moz-min-device-pixel-ratio: 2) and (max-width: 760px),
+	only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 760px),
+	only screen and (min-device-pixel-ratio: 2) and (max-width: 760px) {
+		#makersLogo { background-image: url('../assets/makerslogo-small@2x.png'); background-size: 222px 197px; }	
 }
