@@ -21,9 +21,63 @@
 	<script type='text/javascript'>
 	$(document).ready(function() {
 		$('header').initMenu({
-				'makerSpace': [
+				'spaces': [
 					{
-						'groupTitle': 'Info',
+						'groupTitle': 'MakerSpace',
+						'linkArray': [
+							{
+								'title': 'Home',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Reservation Calendar',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'ThinkerSpace',
+						'linkArray': [
+							{
+								'title': 'Home',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'Tech Theatre Lab',
+						'linkArray': [
+							{
+								'title': 'Home',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'Equipment Reservation',
+						'linkArray': [
+							{
+								'title': 'Afinia 3D Printer',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'UP! 3D Printer',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Epilog Helix 60W',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Nikon D7000',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'digitalFabrication': [
+					{
+						'groupTitle': 'Design',
 						'linkArray': [
 							{
 								'title': 'About',
@@ -32,22 +86,92 @@
 						]
 					},
 					{
-						'groupTitle': 'People',
+						'groupTitle': 'Fabrication',
 						'linkArray': [
 							{
-								'title': 'Laura Deisley',
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'diciplines': [
+					{
+						'groupTitle': 'Disciplines',
+						'linkArray': [
+							{
+								'title': 'Science',
 								'link': 'http://jmkl.co'
 							},
 							{
-								'title': 'James Wingate',
+								'title': 'Technology',
 								'link': 'http://jmkl.co'
 							},
 							{
-								'title': 'Karl Hwang',
+								'title': 'Engineering',
 								'link': 'http://jmkl.co'
 							},
 							{
-								'title': 'John Appleseed',
+								'title': 'Art/History',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Mathematics',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'Projects',
+						'linkArray': [
+							{
+								'title': 'Home',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+				],
+				'community': [
+					{
+						'groupTitle': 'Makers Club',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': 'Producteev Network',
+								'link': 'http://jmkl.co'
+							},							
+						]
+					},
+					{
+						'groupTitle': 'Idea Factory',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							}
+						]
+					},
+					{
+						'groupTitle': 'Robotics Club',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							}
+						]
+					}
+					{
+						'groupTitle': 'Makerbot Training',
+						'linkArray': [
+							{
+								'title': 'About',
+								'link': 'http://jmkl.co'
+							},
+							{
+								'title': '3D Printer Ideas',
 								'link': 'http://jmkl.co'
 							}
 						]
@@ -66,10 +190,10 @@
 			<div id="menuicon"></div>
 			<div id="logo"></div>
 			<nav>
-				<span ref="makerSpace">The Space</span>
-				<span ref="makersClub">Makers Club</span>
-				<span ref="roboticsClub">Robotics Club</span>
-				<span ref="robotics">Robitics I & II</span>
+				<span ref="spaces">Spaces</span>
+				<span ref="digitalFabrication">Digital Fabrication</span>
+				<span ref="community">Community</span>
+				<span ref="disciplines">Disciplines</span>
 			</nav>
 		</div>
 	</header>
