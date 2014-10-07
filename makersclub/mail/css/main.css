@@ -53,10 +53,18 @@ section#compose {
 
 #people {
 	width: 100%;
+	position: relative;
 }
 
 #people .person {
 	border: none;
+	font-style: italic;
+}
+
+#people .person:hover {
+	/* 
+	background: #FAFAFA;
+	*/
 }
 
 #people .person,
@@ -65,18 +73,37 @@ section#compose {
 	width: 100%;
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 1em;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding: 5px 10px;
 	line-height: 1.5;
 }
 
 #people #add {
-	margin-top: -4px;
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
 	-ms-transition: color .2s ease-in-out;
 	-o-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
+}
+
+#people #delete {
+	position: absolute;
+	right: 2px;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	width: 13px;
+	height: 13px;
+	background: url('../assets/delete.png');
+	cursor: pointer;
+	opacity: 0;
+}
+
+#people #delete.show {
+	opacity: 1;
+}
+
+#people #delete:hover {
+	opacity: 0.5;
 }
 
 #people #add:hover {
@@ -88,7 +115,7 @@ section#compose {
 
 section#compose textarea {
 	width: 100%;
-	height: 150px;
+	height: 180px;
 	border-radius: 5px;
 	border: 1px solid #bbb;
 	padding: 10px;
@@ -115,6 +142,12 @@ button {
 	margin-bottom: 10px;
 	border: none;
 	float: right;
+   	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	
 	-webkit-transition: backround .2s ease-in-out;
 	-moz-transition: backround .2s ease-in-out;
@@ -137,5 +170,10 @@ button:hover {
 		header #logo {
 			background: url('../assets/logo@2x.png');
 			background-size: 136px, 55px;
+		}
+
+		#people #delete {
+			background: url('../assets/delete@2x.png');
+			background-size: 13px 13px;
 		}
 	}

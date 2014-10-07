@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+	
+?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -20,7 +23,9 @@
 				<h1>Members</h1>
 				<div id="people">
 					<input class="person" value="John Appleseed">
-					<div id="add">+</div>
+					<input class="person" value="John Appleseed">
+					<div id="add">+ Add Member</div>
+					<div id="delete"></div>
 				</div>
 			</section>
 			<section id="compose">
