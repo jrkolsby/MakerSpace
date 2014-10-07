@@ -17,15 +17,14 @@
 		</header>
 		<section id="container">
 			<section id="members">
-				<h1>Member List</h1>
+				<h1>Members</h1>
 				<div id="people">
-					<div class="person" contenteditable="TRUE">John Appleseed</div>
-					<div class="person" contenteditable="TRUE">Lorem Jones</div>
+					<input class="person" value="John Appleseed">
 					<div id="add">+</div>
 				</div>
 			</section>
 			<section id="compose">
-				<h1>Compose Email</h1>
+				<h1>Compose Mail</h1>
 				<textarea></textarea>
 				<button>Send</button>
 			</section>
