@@ -10,7 +10,7 @@ var defaultPersonValue = "john.appleseed@mac.com",
 	},
 	showCross = function(personElement) {
 		$("#delete").addClass('show')
-					.css('top', $(personElement).offset().top-$(personElement).parent().offset().top+12+"px");
+					.css('top', $(personElement).offset().top-$(personElement).parent().offset().top+13+"px");
 	},
 	hideCross = function() {
 		$("#delete").removeClass('show');

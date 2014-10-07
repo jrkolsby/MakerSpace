@@ -58,7 +58,7 @@ section#compose {
 
 #people .person {
 	border: none;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px dotted #D0D0D0;
 	font-style: italic;
 }
 
@@ -74,7 +74,7 @@ section#compose {
 	width: 100%;
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 1em;
-	padding: 5px 10px;
+	padding: 7px 10px;
 	line-height: 1.5;
 }
 
@@ -132,7 +132,6 @@ textarea:focus{
 }
 input:focus {
 	outline: none;
-	box-shadow:0px 1px 0px #666666;
 }
 button {
 	cursor: pointer;
