@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	line-height: 60px;
+	background: rgba(255,255,255,0.75);
+	position: fixed;
+	padding: 10px;
+}
+
+header #logo {
+	width: 136px;
+	height: 55px;
+	background: url('../assets/logo.png');
+}
+
+/* Container */
+
+#container {
+	width: 100%;
+	max-width: 860px;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+
+#members h1,
+#compose h1 {
+	color: #333;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+section#members {
+	width: 35%;
+	float: left;
+	padding: 10px;
+}
+
+section#compose {
+	width: 65%;
+	float: right;
+	padding: 10px;
+}
+
+/* Members */
+
+#people {
+	width: 100%;
+}
+
+#people .person,
+#people #add {
+	color: #333;
+	width: 100%;
+	font-family: "Helvetica Neue", sans-serif;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	line-height: 1.5;
+}
+
+#people #add {
+	margin-top: -4px;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+#people #add:hover {
+	color: #b2b2b2;
+	cursor: pointer;
+}
+
+/* Compose */
+
+section#compose textarea {
+	width: 100%;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+	padding: 10px;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 0.9em;
+	line-height: 1.3;
+	color: #333;
+	resize: none;
+	margin-bottom: 20px;
+}
+
+button {
+	cursor: pointer;
+	background: #27A4F7;
+	color: #fff;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	border: none;
+	float: right;
+	
+	-webkit-transition: backround .2s ease-in-out;
+	-moz-transition: backround .2s ease-in-out;
+	-ms-transition: backround .2s ease-in-out;
+	-o-transition: backround .2s ease-in-out;
+	transition: background .2s ease-in-out;
+}
+
+button:hover {
+	background: #3fb0fc;
+}
+
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (-moz-min-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+		/* Retina Styles */
+		
+		header #logo {
+			background: url('../assets/logo@2x.png');
+			background-size: 136px, 55px;
+		}
+	}
