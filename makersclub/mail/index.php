@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	
+	$variable;
 ?>
 <html lang="en">
 	<head>
