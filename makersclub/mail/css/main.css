@@ -96,11 +96,11 @@ section#compose {
 	height: 13px;
 	background: url('../assets/delete.png');
 	cursor: pointer;
-	opacity: 0;
+	display: none;
 }
 
 #people #delete.show {
-	opacity: 1;
+	display: inline;
 }
 
 #people #delete:hover {

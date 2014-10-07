@@ -1,16 +1,20 @@
 var defaultPersonValue = "john.appleseed@mac.com",
-	currentPerson,
+	currentPersonElement,
 	addPerson = function(addElement) {
 		var newPerson = $('<input>').addClass('person').attr('value', "");
 		$("#people").append(newPerson).append(addElement);
-		newPerson.focus();
+		newPerson.mouseenter(function() {
+			showCross(this);
+		}).focus();
 	},
-	removePerson = function(person) {
-
+	removePerson = function() {
+		$(currentPersonElement).remove();
+		hideCross();
 	},
 	showCross = function(personElement) {
 		$("#delete").addClass('show')
 					.css('top', $(personElement).offset().top-$(personElement).parent().offset().top+13+"px");
+		currentPersonElement = personElement;
 	},
 	hideCross = function() {
 		$("#delete").removeClass('show');
@@ -24,7 +28,11 @@ $(document).ready(function(){
 	});
 	$(".person").mouseenter(function() {
 		showCross(this);
-	}).mouseout(function() {
+	});
+	$("#people").mouseleave(function() {
 		hideCross();
 	});
+	$("#delete").click(function() {
+		removePerson();
+	})
 });
