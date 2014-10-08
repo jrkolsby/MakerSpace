@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
 <?php
-<<<<<<< HEAD
 	/*
 	include "credentials.php";
 	$link = mysql_connect('localhost', $credentials['user'], $credentials['pass']); 
@@ -10,11 +9,6 @@
 	}
 	mysql_select_db($credentials['db_name']);
 	*/
-=======
-	$users = "hello";
-	$message = "hello";
-	
->>>>>>> FETCH_HEAD
 ?>
 -->
 <html lang="en">
@@ -37,7 +31,6 @@
 			<section id="members">
 				<h1>Members</h1>
 				<div id="people">
-<<<<<<< HEAD
 					<input class="person" value="John Appleseed">
 					<input class="person" value="John Appleseed">
 					<!--
@@ -52,8 +45,6 @@
 						*/
 					?>
 					-->
-=======
->>>>>>> FETCH_HEAD
 					<div id="add">+ Add Member</div>
 					<div id="delete"></div>
 				</div>
