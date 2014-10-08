@@ -1,7 +1,7 @@
 <?php
 	$credentials = array(
-		"user" => "root",
-		"pass" => "C6l1gjihqU",
-		"db_name" => "makersclub"
+		'user' => "8JOitskbhj",
+		'pass' => "C6l1gjihqU",
+		'db_name' => "makersclub"
 	);
 ?>

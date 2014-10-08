@@ -85,6 +85,12 @@ section#compose {
 	-ms-transition: color .2s ease-in-out;
 	-o-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
+    user-select: none;
+}
+
+#people #add:hover {
+	color: #b2b2b2;
+	cursor: pointer;
 }
 
 #people #delete {
@@ -106,11 +112,6 @@ section#compose {
 
 #people #delete:hover {
 	opacity: 0.5;
-}
-
-#people #add:hover {
-	color: #b2b2b2;
-	cursor: pointer;
 }
 
 /* Compose */

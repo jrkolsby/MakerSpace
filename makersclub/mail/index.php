@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<!--
 <?php
-	/*
 	include "credentials.php";
 	$link = mysql_connect('localhost', $credentials['user'], $credentials['pass']); 
 	if (!$link) { 
 		die('Could not connect: ' . mysql_error());
 	}
 	mysql_select_db($credentials['db_name']);
-	*/
 ?>
--->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -31,20 +27,14 @@
 			<section id="members">
 				<h1>Members</h1>
 				<div id="people">
-					<input class="person" value="John Appleseed">
-					<input class="person" value="John Appleseed">
-					<!--
 					<?php
-						/*
 						$query = "SELECT * from members";
 						$result = mysql_query($query) or die(mysql_error());	
 						while($row = mysql_fetch_array($result)){
 							$email = $row['email'];
 							print "<input class='person' value='$email'>";
 						}
-						*/
 					?>
-					-->
 					<div id="add">+ Add Member</div>
 					<div id="delete"></div>
 				</div>
