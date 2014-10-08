@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
-	$variable;
+	$users = "hello";
+	$message = "hello";
+	
 ?>
 <html lang="en">
 	<head>
@@ -22,8 +24,6 @@
 			<section id="members">
 				<h1>Members</h1>
 				<div id="people">
-					<input class="person" value="John Appleseed">
-					<input class="person" value="John Appleseed">
 					<div id="add">+ Add Member</div>
 					<div id="delete"></div>
 				</div>
@@ -33,6 +33,7 @@
 				<textarea></textarea>
 				<button>Send</button>
 			</section>
+		<br><div id="messagevalue" style="position: absolute; bottom: 100px;">.</div>
 		</section>
 	</body>
 </html>

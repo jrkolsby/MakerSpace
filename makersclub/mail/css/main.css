@@ -184,3 +184,21 @@ button:hover {
 			background-size: 13px 13px;
 		}
 	}
+@media (max-width: 550px) {
+	section#members {
+		float: none;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#members h1 {
+		text-align: center;
+	}
+	section#compose {
+		float: none;
+		width: 100%;
+	}
+	#compose h1 {
+		text-align: center;
+	}
+}
