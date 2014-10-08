@@ -27,15 +27,7 @@
 			<section id="members">
 				<h1>Members</h1>
 				<div id="people">
-					<?php
-						$query = "SELECT * from members";
-						$result = mysql_query($query) or die(mysql_error());	
-						while($row = mysql_fetch_array($result)){
-							$email = $row['email'];
-							print "<input class='person' value='$email'>";
-						}
-					?>
-					<div id="add">+ Add Member</div>
+					<div id="add">Add Member</div>
 					<div id="delete"></div>
 				</div>
 			</section>
@@ -44,7 +36,6 @@
 				<textarea></textarea>
 				<button>Send</button>
 			</section>
-		<br><div id="messagevalue" style="position: absolute; bottom: 100px;">.</div>
 		</section>
 	</body>
 </html>

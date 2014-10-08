@@ -9,13 +9,12 @@ header {
 	line-height: 60px;
 	background: rgba(255,255,255,0.75);
 	position: fixed;
-	padding: 10px 0;
+	padding: 10px 10px;
 }
 
 header #logo {
 	width: 136px;
 	height: 55px;
-	margin: 0 auto;
 	background: url('../assets/logo.png');
 }
 
@@ -45,9 +44,10 @@ section#members {
 }
 
 section#compose {
-	width: 75%;
+	width: 70%;
 	float: right;
 	padding: 10px;
+	margin-left: 5%;
 }
 
 /* Members */
@@ -59,8 +59,7 @@ section#compose {
 
 #people .person {
 	border: none;
-	border-bottom: 1px dotted #D0D0D0;
-	font-style: italic;
+	/* border-bottom: 1px dotted #D0D0D0; */
 }
 
 #people .person:hover {
@@ -75,7 +74,9 @@ section#compose {
 	width: 100%;
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 1em;
-	padding: 7px 10px;
+	padding: 3px 0;
+	margin-left: 10px;
+	padding-right: 30px;
 	line-height: 1.5;
 }
 
@@ -86,19 +87,18 @@ section#compose {
 	-o-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
     user-select: none;
+    font-weight: 600;
+    color: #27A4F7;
 }
 
 #people #add:hover {
-	color: #b2b2b2;
+	color: #3fb0fc;
 	cursor: pointer;
 }
 
 #people #delete {
 	position: absolute;
 	right: 2px;
-	font-family: "Helvetica Neue", sans-serif;
-	font-size: 1em;
-	font-weight: 600;
 	width: 13px;
 	height: 13px;
 	background: url('../assets/delete.png');
@@ -186,6 +186,12 @@ button:hover {
 		}
 	}
 @media (max-width: 550px) {
+	header {
+		padding: 10px;
+	}
+	header #logo {
+		margin: 0 auto;
+	}
 	section#members {
 		float: none;
 		width: 100%;
@@ -199,6 +205,7 @@ button:hover {
 	}
 	section#compose {
 		float: none;
+		margin-left: 0;
 		width: 100%;
 	}
 }
