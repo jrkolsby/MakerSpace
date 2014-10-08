@@ -21,6 +21,10 @@ var defaultPersonValue = "john.appleseed@mac.com",
 	},
 	pushNotification = function(message) {
 
+	},
+	updateMessage = function(){
+		var value = $("textarea").val();
+		$("#messagevalue").text( value );
 	}
 $(document).ready(function(){
 	$("#add").click(function(){
@@ -34,5 +38,9 @@ $(document).ready(function(){
 	});
 	$("#delete").click(function() {
 		removePerson();
+	})
+	$("textarea").keyup(function(){
+		var value = $(this).val();
+		$("#messagevalue").text(value);
 	})
 });
