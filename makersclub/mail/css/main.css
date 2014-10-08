@@ -38,13 +38,14 @@ header #logo {
 }
 
 section#members {
-	width: 30%;
+	width: 25%;
 	float: left;
 	padding: 10px;
+	padding-right: 20px;
 }
 
 section#compose {
-	width: 70%;
+	width: 75%;
 	float: right;
 	padding: 10px;
 }
