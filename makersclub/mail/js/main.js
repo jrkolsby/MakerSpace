@@ -4,6 +4,7 @@ var defaultPersonValue = "john.appleseed@mac.com",
 		reloadMembers();
 	}
 	reloadMembers = function() {
+		var lastScrollHeight = $(document).scrollTop();
 		$("#people .person").each(function() {
 			$(this).remove();
 		});
@@ -20,7 +21,9 @@ var defaultPersonValue = "john.appleseed@mac.com",
 					for (var j = 0; j < obj.people.length; j++) {
 						addPerson(obj.people[j].email, obj.people[j].id);
 					}
+					$(document).scrollTop(lastScrollHeight);
 				}
+				$("#members h1").html("Members (" + obj.people.length + ")");
 			}
 		});		
 	},
@@ -55,7 +58,7 @@ var defaultPersonValue = "john.appleseed@mac.com",
 	},
 	addPerson = function(email, id) {
 		var newPerson = $('<input>').addClass('person');
-		$(newPerson).insertBefore("#add");
+		$(newPerson).insertAfter("#add");
 		newPerson.mouseenter(function() {
 			showCross(this);
 		}).blur(function() {

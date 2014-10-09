@@ -104,11 +104,11 @@ section#compose {
 	cursor: pointer;
 	display: none;
 
-	-webkit-transition: opacity .2s ease-in-out;
-	-moz-transition: opacity .2s ease-in-out;
-	-ms-transition: opacity .2s ease-in-out;
-	-o-transition: opacity .2s ease-in-out;
-	transition: opacity .2s ease-in-out;
+	-webkit-transition: opacity .2s ease-in-out, top .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out, top .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out, top .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out, top .2s ease-in-out;
+	transition: opacity .2s ease-in-out, top .2s ease-in-out;
 }
 
 #people #delete.show {
