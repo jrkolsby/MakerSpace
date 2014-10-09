@@ -20,9 +20,11 @@
 		<script src="js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
+		<!--
 		<header>
 			<div id="logo"></div>
 		</header>
+		-->
 		<section id="container">
 			<section id="members">
 				<h1>Members</h1>
