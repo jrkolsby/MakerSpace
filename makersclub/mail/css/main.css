@@ -85,9 +85,15 @@ section#compose {
 	-ms-transition: color .2s ease-in-out;
 	-o-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
-    user-select: none;
-    font-weight: 600;
-    color: #27A4F7;
+	user-select: none;
+	font-weight: 600;
+	color: #27A4F7;
+	width: 155px;
+}
+
+#people #add span {
+	font-size: 1.4em;
+	margin-right: 5px;
 }
 
 #people #add:hover {

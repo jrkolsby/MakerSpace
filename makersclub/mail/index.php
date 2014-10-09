@@ -29,7 +29,7 @@
 			<section id="members">
 				<h1>Members</h1>
 				<div id="people">
-					<div id="add">Add Member</div>
+					<div id="add"><span>+</span>Add Member</div>
 					<div id="delete"></div>
 				</div>
 			</section>
