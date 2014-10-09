@@ -23,7 +23,7 @@
 			$query = "UPDATE members SET email='$email' WHERE id='$id'";
 			$result = mysql_query($query) or die(mysql_error());
 		case "getPeople":
-			$query = "SELECT * from members ORDER BY name";
+			$query = "SELECT * from members ORDER BY id";
 			$result = mysql_query($query) or die(mysql_error());
 			$amount = mysql_num_rows($result);
 			if ($amount == 0) {

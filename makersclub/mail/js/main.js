@@ -24,6 +24,35 @@ var defaultPersonValue = "john.appleseed@mac.com",
 			}
 		});		
 	},
+	sqlAddPerson = function(personElement) {
+		var data = {
+			'protocol': 'addPerson',
+			'email': $(personElement).val()
+		}
+		$.ajax({
+			method: "GET",
+			url: "main.php",
+			data: data,
+			success: function(data) {
+				reloadMembers();
+			}
+		});
+	},
+	sqlUpdatePerson = function(personElement) {
+		var data = {
+			'protocol': 'updatePerson',
+			'id': $(personElement).attr('ref'),
+			'email': $(personElement).val()
+		}				
+		$.ajax({
+			method: "GET",
+			url: "main.php",
+			data: data,
+			success: function(data) {
+				reloadMembers();
+			}
+		});		
+	},
 	addPerson = function(email, id) {
 		var newPerson = $('<input>').addClass('person');
 		$(newPerson).insertBefore("#add");
@@ -31,36 +60,14 @@ var defaultPersonValue = "john.appleseed@mac.com",
 			showCross(this);
 		}).blur(function() {
 			if (!$(this).attr('ref')) {
-				//Is new person, add to mySQL
-				console.log("add person");
-				var data = {
-					'protocol': 'addPerson',
-					'email': $(this).val()
-				}
-				$.ajax({
-					method: "GET",
-					url: "main.php",
-					data: data,
-					success: function(data) {
-						reloadMembers();
-					}
-				});
-			} else {
-				//Is old person, update in mySQL
-				var data = {
-					'protocol': 'updatePerson',
-					'id': $(this).attr('ref'),
-					'email': $(this).val()
-				}				
-				$.ajax({
-					method: "GET",
-					url: "main.php",
-					data: data,
-					success: function(data) {
-						reloadMembers();
-					}
-				});				
-			}
+				sqlAddPerson(this);
+			} else {sqlUpdatePerson(this);}
+		}).keyup(function (e) {
+   			if (e.keyCode == 13) {
+				if (!$(this).attr('ref')) {
+					sqlAddPerson(this);
+				} else {sqlUpdatePerson(this);}
+    		}
 		});
 		if (id != null) {
 			$(newPerson).val(email).attr('ref', id);
