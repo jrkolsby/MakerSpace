@@ -57,8 +57,7 @@ var defaultPersonValue = "john.appleseed@mac.com",
 		});		
 	},
 	addPerson = function(email, id) {
-		var newPerson = $('<input>').addClass('person');
-		$(newPerson).insertAfter("#add");
+		var newPerson = $('<input>').addClass('person').insertAfter("#add");
 		newPerson.mouseenter(function() {
 			showCross(this);
 		}).blur(function() {
