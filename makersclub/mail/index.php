@@ -20,11 +20,10 @@
 		<script src="js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<!--
 		<header>
 			<div id="logo"></div>
 		</header>
-		-->
+		<div id="logo-small"></div>
 		<section id="container">
 			<section id="members">
 				<h1>Members</h1>
@@ -35,8 +34,8 @@
 			</section>
 			<section id="compose">
 				<h1>Compose Mail</h1>
-				<textarea></textarea>
 				<button>Send</button>
+				<textarea></textarea>
 			</section>
 		</section>
 	</body>

@@ -6,16 +6,41 @@
 
 header {
 	width: 100%;
+	position: absolute;
 	line-height: 60px;
-	background: rgba(255,255,255,0.75);
-	position: fixed;
+	background: #FFD200;
 	padding: 10px 10px;
+}
+
+#small-logo {
+	height: 75px;
+	width: 
 }
 
 header #logo {
 	width: 136px;
 	height: 55px;
+	margin: 0 auto;
 	background: url('../assets/logo.png');
+}
+
+#logo-small {
+	background: #FFD200 url('../assets/logo-small.png') no-repeat center;
+	height: 75px;
+	width: 70px;
+	position: fixed;
+	top: 0;
+	left: -70px;
+
+	-webkit-transition: left .2s ease-in-out;
+	-moz-transition: left .2s ease-in-out;
+	-ms-transition: left .2s ease-in-out;
+	-o-transition: left .2s ease-in-out;
+	transition: left .2s ease-in-out;
+}
+
+#logo-small.visible {
+	left: 0;
 }
 
 /* Container */
@@ -26,6 +51,7 @@ header #logo {
 	margin: 0 auto;
 	padding: 30px;
 	overflow: auto;
+	padding-top: 110px;
 }
 
 #members h1,
@@ -34,6 +60,15 @@ header #logo {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 1.5em;
 	margin-bottom: 20px;
+}
+
+#compose h1 {
+	float: left;
+}
+
+#compose button {
+	position: relative;
+	bottom: 10px;
 }
 
 section#members {
@@ -156,8 +191,6 @@ button {
 	width: 100px;
 	height: 40px;
 	border-radius: 4px;
-	margin-right: auto;
-	margin-left: auto;
 	margin-bottom: 10px;
 	border: none;
 	float: right;
@@ -194,6 +227,10 @@ button:hover {
 		#people #delete {
 			background: url('../assets/delete@2x.png');
 			background-size: 13px 13px;
+		}
+		#logo-small {
+			background: #FFD200 url('../assets/logo-small@2x.png') no-repeat center;
+			background-size: 55px 55px;
 		}
 	}
 @media (max-width: 550px) {

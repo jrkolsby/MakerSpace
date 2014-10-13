@@ -1,5 +1,6 @@
 var defaultPersonValue = "john.appleseed@mac.com",
 	currentPersonElement,
+	smallLogoIsVisible,
 	loadMembers = function() {
 		reloadMembers();
 	}
@@ -103,9 +104,21 @@ var defaultPersonValue = "john.appleseed@mac.com",
 	},
 	pushNotification = function(message) {
 
+	},
+	didScroll = function() {
+		if ($(document).scrollTop() > $("header").height()+20 && !smallLogoIsVisible) {
+			$("#logo-small").addClass("visible");
+			smallLogoIsVisible = true;
+		} else if ($(document).scrollTop() <= $("header").height()+20 && smallLogoIsVisible) {
+			$("#logo-small").removeClass("visible");
+			smallLogoIsVisible = false;
+		}
 	}
 $(document).ready(function(){
 	loadMembers();
+	$(document).scroll(function() {
+		didScroll();
+	});
 	$("#add").click(function(){
 		addPerson();
 	});
