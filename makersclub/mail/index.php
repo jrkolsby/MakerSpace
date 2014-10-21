@@ -14,7 +14,7 @@
 		<meta name="keywords" content="">
 		<meta name="author" content="">
 		<title>Mail</title>
-		<link rel="stylesheet" type="text/css" href="css/html5.css">
+		<link rel="stylesheet" type="text/css" href="../../css/html5.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type='text/javascript' src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/main.js" type="text/javascript"></script>

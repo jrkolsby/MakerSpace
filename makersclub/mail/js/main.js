@@ -1,4 +1,4 @@
-var defaultPersonValue = "john.appleseed@mac.com",
+var defaultEmail = "john.appleseed@mac.com",
 	currentPersonElement,
 	smallLogoIsVisible,
 	loadMembers = function() {

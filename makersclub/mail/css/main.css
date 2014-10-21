@@ -12,11 +12,6 @@ header {
 	padding: 10px 10px;
 }
 
-#small-logo {
-	height: 75px;
-	width: 
-}
-
 header #logo {
 	width: 136px;
 	height: 55px;
@@ -29,6 +24,7 @@ header #logo {
 	height: 75px;
 	width: 70px;
 	position: fixed;
+	z-index: 99;
 	top: 0;
 	left: -70px;
 
@@ -47,7 +43,7 @@ header #logo {
 
 #container {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 900px;
 	margin: 0 auto;
 	padding: 30px;
 	overflow: auto;
@@ -239,6 +235,9 @@ button:hover {
 	}
 	header #logo {
 		margin: 0 auto;
+	}
+	#logo-small {
+		display: none;
 	}
 	section#members {
 		float: none;
