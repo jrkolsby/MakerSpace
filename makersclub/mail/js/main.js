@@ -1,14 +1,12 @@
 var defaultEmail = "john.appleseed@mac.com",
 	currentPersonElement,
 	smallLogoIsVisible,
+	emailObject,
 	loadMembers = function() {
 		reloadMembers();
 	}
 	reloadMembers = function() {
 		var lastScrollHeight = $(document).scrollTop();
-		$("#people .person").each(function() {
-			$(this).remove();
-		});
 		var data = {
 			'protocol': 'getPeople'
 		}
@@ -17,7 +15,11 @@ var defaultEmail = "john.appleseed@mac.com",
 			url: "main.php",
 			data: data,
 			success: function(data) {
+				$("#people .person").each(function() {
+					$(this).remove();
+				});
 				var obj = $.parseJSON(data);
+				emailObject = obj;
 				if (obj.people.length > 0) {
 					for (var j = 0; j < obj.people.length; j++) {
 						addPerson(obj.people[j].email, obj.people[j].id);
@@ -60,7 +62,7 @@ var defaultEmail = "john.appleseed@mac.com",
 	addPerson = function(email, id) {
 		var newPerson = $('<input>').addClass('person').insertAfter("#add");
 		newPerson.mouseenter(function() {
-			showCross(this);
+			showMemberUI(this);
 		}).blur(function() {
 			if (!$(this).attr('ref')) {
 				sqlAddPerson(this);
@@ -92,15 +94,33 @@ var defaultEmail = "john.appleseed@mac.com",
 				reloadMembers();
 			}
 		});
-		hideCross();
+		hideMemberUI();
 	},
-	showCross = function(personElement) {
-		$("#delete").addClass('show')
+	sendMessage = function() {
+		var message = $("#compose textarea").val();
+		var data = {
+			'protocol': 'sendMessage',
+			'message': message,
+			'people': emailObject,
+			'subject': $("input#subject").val(),
+			'name': $("input#name").val()
+		}
+		$.ajax({
+			method: "GET",
+			url: "main.php",
+			data: data,
+			success: function(data) {
+				reloadMembers();
+			}
+		});		
+	},
+	showMemberUI = function(personElement) {
+		$("#options").addClass('show')
 					.css('top', $(personElement).offset().top-$(personElement).parent().offset().top+9+"px");
 		currentPersonElement = personElement;
 	},
-	hideCross = function() {
-		$("#delete").removeClass('show');
+	hideMemberUI = function() {
+		$("#options").removeClass('show');
 	},
 	pushNotification = function(message) {
 
@@ -123,12 +143,12 @@ $(document).ready(function(){
 		addPerson();
 	});
 	$(".person").mouseenter(function() {
-		showCross(this);
+		showMemberUI(this);
 	});
 	$("#people").mouseleave(function() {
-		hideCross();
+		hideMemberUI();
 	});
-	$("#delete").click(function() {
+	$("#options .delete").click(function() {
 		removePerson();
 	});
 });

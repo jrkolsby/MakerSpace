@@ -58,15 +58,6 @@ header #logo {
 	margin-bottom: 20px;
 }
 
-#compose h1 {
-	float: left;
-}
-
-#compose button {
-	position: relative;
-	bottom: 10px;
-}
-
 section#members {
 	width: 38%;
 	float: left;
@@ -78,6 +69,7 @@ section#compose {
 	width: 62%;
 	float: right;
 	padding: 10px;
+	position: relative;
 }
 
 /* Members */
@@ -132,31 +124,66 @@ section#compose {
 	cursor: pointer;
 }
 
-#people #delete {
+#people #options {
 	position: absolute;
 	right: 2px;
+	display: none;
+
+	-webkit-transition: top .1s ease-in-out;
+	-moz-transition: top .1s ease-in-out;
+	-ms-transition: top .1s ease-in-out;
+	-o-transition: top .1s ease-in-out;
+	transition: top .1s ease-in-out;
+}
+
+#people #options.show {
+	display: inline;
+}
+
+#people #options .delete {
 	width: 13px;
 	height: 13px;
 	background: url('../assets/delete.png');
 	cursor: pointer;
-	display: none;
-
-	-webkit-transition: opacity .2s ease-in-out, top .1s ease-in-out;
-	-moz-transition: opacity .2s ease-in-out, top .1s ease-in-out;
-	-ms-transition: opacity .2s ease-in-out, top .1s ease-in-out;
-	-o-transition: opacity .2s ease-in-out, top .1s ease-in-out;
-	transition: opacity .2s ease-in-out, top .1s ease-in-out;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
 }
 
-#people #delete.show {
-	display: inline;
-}
-
-#people #delete:hover {
+#people #options .delete:hover {
 	opacity: 0.5;
 }
 
 /* Compose */
+
+section#compose button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 80px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+section#compose input {
+	border: none;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 0.9em;
+	font-style: italic;
+	padding: 8px 15px;
+	padding-right: 0;
+	border-bottom: 1px dotted #bbb;
+	display: block;
+	width: 100%;
+	color: #666;
+}
+
+section#compose input:last-of-type {
+	border-bottom: none;
+	margin-bottom: 16px;
+}
 
 section#compose textarea {
 	width: 100%;
@@ -184,12 +211,8 @@ button {
 	font-family: "Helvetica Neue", sans-serif;
 	font-weight: 600;
 	font-size: 14px;
-	width: 100px;
-	height: 40px;
 	border-radius: 4px;
-	margin-bottom: 10px;
 	border: none;
-	float: right;
    	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -220,7 +243,7 @@ button:hover {
 			background-size: 136px, 55px;
 		}
 
-		#people #delete {
+		#people #options .delete {
 			background: url('../assets/delete@2x.png');
 			background-size: 13px 13px;
 		}

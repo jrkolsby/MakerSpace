@@ -29,12 +29,18 @@
 				<h1>Members</h1>
 				<div id="people">
 					<div id="add"><span>+</span>Add Member</div>
-					<div id="delete"></div>
+					<div id="options">
+						<div class="delete"></div>
+					</div>
 				</div>
 			</section>
 			<section id="compose">
 				<h1>Compose Mail</h1>
 				<button>Send</button>
+				<input onfocus="if(this.value=='Email Subject'){this.value=''}" 
+						onblur="if(this.value==''){this.value='Email Subject'}" value="Email Subject" id="subject">
+				<input onfocus="if(this.value=='From Name'){this.value=''}" 
+						onblur="if(this.value==''){this.value='From Name'}" value="From Name" id="name">
 				<textarea></textarea>
 			</section>
 		</section>
