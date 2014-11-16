@@ -1,30 +1,26 @@
 <?
 	include "../../credentials.php";
-	$link = mysql_connect('localhost', $credentials['user'], $credentials['pass']);
-	if (!$link) {
-		die('Could not connect: ' . mysql_error());
-	}
-	mysql_select_db($credentials['db_name']);
+	$link = mysqli_connect("localhost",$credentials['user'],$credentials['pass'],$credentials['db_name']) or die("Error " . mysqli_error($link));
 
 	switch ($_GET['protocol']) {
 		case "removePerson":
 			$id = $_GET['id'];
 			$query = "DELETE from members WHERE id = '$id'";
-			$result = mysql_query($query) or die(mysql_error());
+			$result = mysqli_query($link, $query) or die(mysqli_error());
 			break;
 		case "addPerson":
 			$email = $_GET['email'];
 			$query = "INSERT INTO members (email) VALUES('$email')";
-			$result = mysql_query($query) or die(mysql_error());
+			$result = mysqli_query($link, $query) or die(mysqli_error());
 			break;
 		case "updatePerson":
 			$id = $_GET['id'];
 			$email = $_GET['email'];
 			$query = "UPDATE members SET email='$email' WHERE id='$id'";
-			$result = mysql_query($query) or die(mysql_error());
+			$result = mysqli_query($link, $query) or die(mysqli_error());
 		case "getPeople":
 			$query = "SELECT * from members ORDER BY id";
-			$result = mysql_query($query) or die(mysql_error());
+			$result = mysqli_query($link, $query) or die(mysqli_error());
 			$amount = mysql_num_rows($result);
 			if ($amount == 0) {
 				print '{"people": []}';

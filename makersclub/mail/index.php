@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <?php
 	include "../../credentials.php";
-	$link = mysql_connect('localhost', $credentials['user'], $credentials['pass']); 
-	if (!$link) { 
-		die('Could not connect: ' . mysql_error());
-	}
-	mysql_select_db($credentials['db_name']);
+	$link = mysqli_connect("localhost",$credentials['user'],$credentials['pass'],$credentials['db_name']) or die("Error " . mysqli_error($link));
 ?>
 <html lang="en">
 	<head>

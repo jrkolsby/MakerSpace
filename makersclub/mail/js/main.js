@@ -15,6 +15,7 @@ var defaultEmail = "john.appleseed@mac.com",
 			url: "main.php",
 			data: data,
 			success: function(data) {
+				console.log(data);
 				$("#people .person").each(function() {
 					$(this).remove();
 				});
