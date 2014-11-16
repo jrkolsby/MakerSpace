@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	include "credentials.php";
+	include "../../credentials.php";
 	$link = mysql_connect('localhost', $credentials['user'], $credentials['pass']); 
 	if (!$link) { 
 		die('Could not connect: ' . mysql_error());
